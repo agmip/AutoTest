@@ -1,4 +1,4 @@
-// 8.3 NinthTest, preoperation
+// 8.23 NinthTest, preoperation
 
 package com.somnus.hi.nange;
 import java.awt.List;
@@ -6,6 +6,7 @@ import javax.lang.model.element.Element;
 import javax.swing.text.html.HTMLDocument.Iterator;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,7 +45,7 @@ public class App {
     	// declaration and instantiation of objects/variables
         WebDriver driver = (WebDriver) new ChromeDriver();
         GetValuefromExcel.driver=driver;
-        
+              
     	// A new testing work, you need to change the website.
         // Launch website
         driver.get("http://dssat2d-plot.herokuapp.com/demo/unit");
@@ -56,8 +57,8 @@ public class App {
         for(int f=0; f<GetValueformFile.GetFileNum(testFolder); f++)
         {
         	abc.filestr=filestr[f].toString();
-        	System.out.println("/******************************************************************************************/");
-        	System.out.println("/******************************************************************************************/");
+        	System.out.println("/******************************************************************************************m/");
+        	System.out.println("/******************************************************************************************m/");
     	    System.out.println("Following is the tests in file: \" " + abc.filestr + "\n");
         	int num=abc.SheetNum(abc.filestr);
         	
@@ -66,7 +67,7 @@ public class App {
             	abc.Test(driver, i);
             }                   	
         }
-        
+
     	driver.close();     
         System.out.println("The testing has been completed!");
     }

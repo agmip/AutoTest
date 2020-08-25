@@ -1,4 +1,4 @@
-// 8.3 NinthTest
+// 8.23 NinthTest
 package com.somnus.hi.nange;
 
 import java.io.FileInputStream;
@@ -136,6 +136,8 @@ public class GetValuefromExcel {
 			case "a":
 				System.out.println("There is a preoperation \"a \" ");
 				driver.findElements(By.id("unit_type_chosen")).get(1).findElement(By.className("chosen-search-input")).sendKeys("centi - 0.01"+"\n");   
+				driver.findElements(By.id("unit_type_chosen")).get(1).findElement(By.className("chosen-search-input")).sendKeys("centi - 0.01"+"\n");
+				driver.findElements(By.id("unit_type_chosen")).get(1).findElement(By.className("chosen-search-input")).sendKeys("centi - 0.01"+"\n");
 		        break;
 			case "b":
 				System.out.println("There is a preoperation \"b \" ");
@@ -144,24 +146,16 @@ public class GetValuefromExcel {
 			case "c":
 				System.out.println("There is a preoperation \"c \" ");
 		        driver.get("http://dssat2d-plot.herokuapp.com/demo/vmapper");
-		       /* Thread.sleep(1000);
 		        driver.manage().window().maximize();
-		        Thread.sleep(1000);
+		        Thread.sleep(2000);
 		        driver.getCurrentUrl();
-		        driver.findElement(By.xpath("/html/body/div[12]/div/div/div[2]/div/div/div[1]/div/span/label/span")).click();
+		        driver.findElement(By.id("filestyle-0")).sendKeys("C:\\Users\\ga_ri\\Desktop\\Preop\\cng201819_2020-05-21_jgt_chp.xlsx");
+		        driver.findElement(By.id("filestyle-1")).sendKeys("C:\\Users\\ga_ri\\Desktop\\Preop\\cng201819_2020-05-21_jgt_chp-sc2.json");
 		        Thread.sleep(1000);
-		        driver.getCurrentUrl();
-		        Thread.sleep(1000);
-		        driver.getCurrentUrl()
-		        driver.findElement(By.xpath("/html/body/div[12]/div/div/div[2]/div/div/div[1]/div/input")).sendKeys("C:\\Users\\ga_ri\\Desktop\\Preop\\cng201819_2020-05-21_jgt_chp.xlsx");
-		        Thread.sleep(1000);
-		        System.out.println("hello!");
-		        */
+		        driver.findElement(By.xpath("/html/body/div[12]/div/div/div[3]/button[2]")).click();
+		        Thread.sleep(3000);
+		        driver.findElement(By.xpath("/html/body/div[12]/div/div/div[2]/button")).click();
 
-		        //.sendKeys("C:\\Users\\ga_ri\\Desktop\\Preop\\cng201819_2020-05-21_jgt_chp.xlsx");
-		       // driver.findElement(By.xpath("/html/body/div[12]/div/div/div[2]/div/div/div[2]/div/input")).sendKeys("C:\\Users\\ga_ri\\Desktop\\Preop\\cng201819_2020-05-21_jgt_chp-sc2.json");
-		       // driver.findElement(By.xpath("/html/body/div[12]/div/div/div[3]/button[2]")).click();
-		        //driver.quit();
 		        driver.get("http://dssat2d-plot.herokuapp.com/demo/unit");
 		        driver.manage().window().maximize();
 			case "":
